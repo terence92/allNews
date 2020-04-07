@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run prova.py
+web: sh setup.sh && streamlit run NewsScraper.py
