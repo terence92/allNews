@@ -15,8 +15,10 @@ data['newspapers'] = {}
 import requests
 import json
 import urllib, json
-response = urllib.urlopen("https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json")
-companies = json.loads(response.read())
+url = 'https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json'
+data = urllib.request.urlopen(url).read().decode()
+# parse json object
+companies = json.loads(data)
 #companies = json.loads(requests.get("https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json").txt)
 
 count = 1
