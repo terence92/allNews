@@ -4,3 +4,6 @@ jsonschema==3.2.0
 newspaper3k==0.2.8
 DateTime==4.3
 streamlit==0.57.3
+requests==2.22.0
+requests-file==1.4.3
+requests-oauthlib==1.2.0
