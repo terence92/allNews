@@ -14,8 +14,9 @@ data['newspapers'] = {}
 # Loads the JSON files with news sites
 import requests
 import json
-json_url = urlopen("https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json")
-companies = json.loads(json_url.read())
+import urllib, json
+response = urllib.urlopen("https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json")
+companies = json.loads(response.read())
 #companies = json.loads(requests.get("https://raw.githubusercontent.com/terence92/allNews/master/NewsPapers.json").txt)
 
 count = 1
