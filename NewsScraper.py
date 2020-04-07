@@ -14,7 +14,7 @@ data['newspapers'] = {}
 # Loads the JSON files with news sites
 import requests
 import json
-response = json.loads(requests.get("https://raw.githubusercontent.com/terence92/allNews/master/scraped_articles.json").text)
+companies = json.loads(requests.get("https://raw.githubusercontent.com/terence92/allNews/master/scraped_articles.json").text)
 
 count = 1
 
