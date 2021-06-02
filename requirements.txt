@@ -7,4 +7,4 @@ streamlit==0.57.3
 requests==2.22.0
 requests-file==1.4.3
 requests-oauthlib==1.2.0
-urllib3==1.25.8
+urllib3==1.26.5
